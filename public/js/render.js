@@ -17,7 +17,7 @@ function modalrender(name,description,image) {
              <div class="closeBtn">X</div>
              <h3>${name}</h3>
                 <p>${description ? description : `<b class="color-red">Desculpe, não há descrição.</b>`}</p>
-                <img src="${image}" width="464" height="261" alt="...">
+                <img src="${image}" alt="..." id="img-search">
         </div><!--box-modal-->
     `;
 }

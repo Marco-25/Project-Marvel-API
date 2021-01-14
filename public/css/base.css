@@ -59,45 +59,76 @@ main {
 
 @media screen and (max-width: 1280px) {
     main {
-        height: 1480px;
+        height: 90rem;
+    }
+
+    .w25 {
+        flex: 25%;
     }
 }
 
 @media screen and (max-width: 1024px) {
     main {
-        height: 1450px;
+        height: 110rem;
     }
+
+    .w25 {
+        flex: 33%;
+    }
+
 }
 
-@media screen and (max-width: 992px) {
-
-    .pagination > span {
-        margin: 2px 0;
+@media screen and (max-width: 840px) {
+    main {
+        height: 115rem;
     }
-
-    #body { height: calc(50rem * 2)}
-
-
 }
 
 @media screen and (max-width: 768px) {
     .w25 {
-        flex: 50%;
+        flex: 33%;
     }
     main {
-        height: 150rem;
+        height: 115rem;
     }
 
-    #body { height: calc(78rem * 2)}
+    #body { height: calc(63rem * 2)}
+
+    .footer {
+        margin-top: 0;
+    }
+
+    .bg-modal-navegate {
+        top: 20rem;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .slider { display: none}
+    .w25 {
+        flex: 50%;
+    }
+
+    main {
+        height: 132rem;
+    }
+
+    #body { height: calc(71rem * 2)}
 
     .footer {
         margin-top: 0;
     }
 
 }
-
-@media screen and (max-width: 560px) {
-    .slider { display: none}
+@media screen and (max-width: 640px) {
+    .w25 {
+        flex: 100%;
+    }
+    main { height: 245rem;}
+    #body { height: calc(130rem * 2)}
+}
+@media screen and (max-width: 500px) {
     .w25 {
         flex: 100%;
     }
@@ -106,16 +137,26 @@ main {
         height: 250rem;
     }
 
-    #body { height: calc(130rem * 2)}
+    #body { height: calc(133rem * 2)}
 
     .footer {
         margin-top: 0;
+
     }
+    .bg-modal-navegate {
+        top: 20rem;
+    }
+
+    .bg-modal{
+        width: 100%;
+    }
+
+    .box-modal {
+        width: 97%;
+        left: 2rem;
+    }
+
 
 }
 
-@media screen and (max-width: 500px) {
-    .w25 {
-        flex: 100%;
-    }
-}
+

@@ -11,13 +11,13 @@
 }
 
 .box-modal {
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    max-width: 500px;
-    padding: 2rem 2%;
+    max-width: 480px;
+    padding: 2rem 3%;
     height: auto;
     width: calc(100% - 0);
     border: 5px solid rgba(210,210,210,.9);
@@ -43,4 +43,10 @@
 
 .box-modal > p {
     text-align: center;
+}
+
+#img-search {
+
+    width: 444px;
+    height: 251px;
 }
