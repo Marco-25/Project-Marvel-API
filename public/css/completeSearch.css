@@ -1,4 +1,10 @@
 #logo-marvel {text-align: center}
+#marvel-reference-complete-search {
+    color: White;
+    margin-top: 5rem;
+    width: 100%;
+    text-align: center;
+}
 .content-marvel-details {
     background-color: rgba(250,250,250, .7);
     width: calc(100% + 5rem);
@@ -98,7 +104,8 @@
     }
 
     #container{
-        margin-left: 2rem;
+        margin-left: .8rem;
+        
     }
 
 }
