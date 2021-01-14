@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body { background: url("./../imagens/marvelBackground.gif") center / cover no-repeat; height: auto}
+.body { background: url("./../imagens/marvelBackground.gif") center / cover no-repeat; height: auto;padding-bottom: 25rem}
+#container {width: 70%}
+
+.logo-marvel {
+    background-color: rgba(0,0,0, .6);
+    color: white;
+    font-family: "Arial", serif;
+    padding: .1rem 1rem;
+    font-weight: bold;
+}
+
+section#container {
+    margin-top: 3rem;
+}
+
+main {
+    position: relative;
+    height: 1400px;
+}
+
+.pagination {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 0;
+    transform: translate(-3%, -3%);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+.w25 {
+    border: 1px solid black;
+    border-radius: 10px;
+    flex: calc(25% - 1rem);
+    padding: 0;
+}
+
+.footer {
+    margin-top: 2rem;
+    height: 8rem;
+    line-height: 8rem;
+    width: 100%;
+}
+.footer > p {
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 1280px) {
+    main {
+        height: 1480px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        height: 1450px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .pagination > span {
+        margin: 2px 0;
+    }
+
+    #body { height: calc(50rem * 2)}
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .w25 {
+        flex: 50%;
+    }
+    main {
+        height: 150rem;
+    }
+
+    #body { height: calc(78rem * 2)}
+
+    .footer {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .slider { display: none}
+    .w25 {
+        flex: 100%;
+    }
+
+    main {
+        height: 250rem;
+    }
+
+    #body { height: calc(130rem * 2)}
+
+    .footer {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .w25 {
+        flex: 100%;
+    }
+}

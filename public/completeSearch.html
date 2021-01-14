@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <title>API | Marvel</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/completeSearch.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+<div class="body">
+
+<header class="">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <span id="logo-marvel" class="logo-marvel" >MARVEL | API</span>
+        </a>
+    </nav>
+</header>
+
+<div class="container" id="container">
+    <div class="row justify-content-center">
+        <form class="form-inline" id="form-search-complete">
+            <div class="form-group mx-sm-3 mb-2">
+                <label> <input type="text" class="form-control" id="input-search-complete" required placeholder="ex: wolverine"> </label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">buscar</button>
+        </form>
+    </div>
+
+    <div class="w50 content-marvel-details">
+
+        <div id="content-marvel-details-1">
+            <!--name/description/image-->
+        </div>
+
+
+        <div class="row-comics-series-stories-events">
+            <h5 id="click-1">Comics</h5>
+              <ul class="hide marvel-1" id="comic">  <!--li--> </ul>
+        </div>
+
+        <div class="row-comics-series-stories-events">
+            <h5 id="click-2">series</h5>
+            <ul class="hide marvel-2" id="series"><!--li--> </ul>
+        </div>
+
+        <div class="row-comics-series-stories-events">
+            <h5 id="click-3">stories</h5>
+            <ul class="hide marvel-3" id="stories"> <!--li--> </ul>
+        </div>
+
+        <div class="row-comics-series-stories-events">
+            <h5 id="click-4">events</h5>
+            <ul class="hide marvel-4" id="events"> <!--li--> </ul>
+        </div>
+
+</div><!--w50 content-marvel-details-->
+</div><!--container-->
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="app/generatorMD5.js"></script>
+<script src="app/caracters-only.js"></script>
+<script src="js/complete-search.js"></script>
+</body>
+</html>

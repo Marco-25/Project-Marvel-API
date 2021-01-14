@@ -1,0 +1,97 @@
+
+.bg-modal-navegate{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgba(0,0,0,.6);
+}
+
+.content-navigate {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    max-width: 1024px;
+    padding: 2rem 2%;
+    height: auto;
+    width: calc(100% - 0);
+    /*border: 5px solid rgba(210,210,210,.9);*/
+    border: 5px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.closeBtn-navegate {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #cb1e1e;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.content-navigate > img {padding-bottom: 1rem}
+.content-navigate > #grid-img {
+    width: 80%;
+    height: 200px;
+}
+
+.content-navigate > #mouse-img {
+    width: auto;
+    height: 300px;
+}
+
+.content-navigate > #search-img {
+    width: 100%
+}
+
+.content-navigate > h3 > p {
+    font-family: "Comic Sans MS", serif;
+}
+
+.content-navigate > p {
+    font-size: 1.1rem;
+}
+
+.visible { display: block}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

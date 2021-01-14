@@ -1,0 +1,106 @@
+#logo-marvel {text-align: center}
+.content-marvel-details {
+    background-color: rgba(250,250,250, .7);
+    width: calc(100% - 5rem);
+    margin: 0 auto;
+    height: auto;
+    border-radius: 1rem ;
+    padding-top: 1rem;
+    border: .3rem solid gray;
+}
+
+.content-marvel-details > #content-marvel-details-1 > h3 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.content-marvel-details__container > .img-description {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.img-description > img {
+    padding-right: 1rem;
+    width: 100%;
+    height: 100%;
+    max-width: 464px;
+    max-height: 261px;
+}
+
+.img-description > p {
+    padding: 0 1rem;
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+}
+
+.content-marvel-details > .row-comics-series-stories-events {
+    width: 100%;
+    height: auto;
+    padding-bottom: .7rem;
+    border-top-left-radius: 1rem ;
+    border-top-right-radius: 1rem ;
+    border-top: 1px solid gray;
+}
+
+.row-comics-series-stories-events > h5 {
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: .3rem;
+    cursor: pointer;
+}
+
+.row-comics-series-stories-events > ul{
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 28rem;
+}
+
+.row-comics-series-stories-events > ul > li{
+    text-decoration: underline;
+    color: rgba(0,0,0,.8);
+    padding-bottom: .2rem;
+}
+
+.invisible {
+    display: block;
+}
+@media screen and (max-width: 1024px) {
+    .row-comics-series-stories-events > ul{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .row-comics-series-stories-events > ul{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-marvel-details__container > .img-description {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 560px) {
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+}
+
+
+
+
+
+
+

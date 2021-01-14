@@ -1,0 +1,109 @@
+header .a-search {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white!important;
+}
+
+header .a-search:hover {
+    background-color: lightgray;
+    padding: 0 1rem;
+    color: black!important;
+}
+
+.grid__container {
+    position: relative;
+    margin-bottom: .5rem;
+}
+
+.grid__container img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 225px;
+    border-bottom: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.grid__container .w25 { background-color: rgba(210,210,210,.6);}
+.grid__container .w25 > h3 {
+    padding: .4rem 0;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.grid__container-hover-detalhes {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: .5rem solid transparent;
+}
+
+.grid__container .w25 {position: relative}
+.img  {position: relative}
+.grid__container .w25 .img:hover > p {display: block}
+.grid__container .w25 .img > p{
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    display: none;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgba(0,0,0, .6);
+    border: 1px solid black;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    font-size: .7rem;
+    font-weight: bolder;
+    width: 100%;
+    height: 100%;
+    transform: translate(0 ,0);
+    letter-spacing: .2rem;
+    padding: .2rem;
+    text-decoration: none;
+    overflow-y: auto;
+}
+.grid__container .w25 .img > p > b {font-size: 1.1rem}
+.color-red {color: #d02a2a
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pagination > span {margin: 4px 0}
+.pagination > span > a {
+    width: .5rem;
+    height: .5rem;
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 1rem;
+    margin-left: .4rem;
+    cursor: pointer;
+}
+.pagination > span:hover{color: white}
+.pagination > span > a:hover{background-color: rgba(0,0,0,.3); }
+.pagination > span > a.active  {color: black; background-color: #d02a2a;}
+
+.pagination__link {}
+.color-red {color: red}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
