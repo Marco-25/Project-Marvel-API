@@ -46,25 +46,16 @@ main {
     padding: 0;
 }
 
-.footer {
-    margin-top: 2rem;
-    height: 10rem;
-    line-height: 10rem;
-    width: 100%;
-}
-.footer > p {
+
+footer > p {
+    margin-top: 3rem;
     text-align: center;
     color: black;
     font-size: 1rem;
     letter-spacing: .3rem;
+    padding: 4rem 0;
 }
 
-#marvel-reference-index {
-    color: black;
-    width: 100%;
-    text-align: center;
-    border: solid 1px blue;
-}
 
 @media screen and (max-width: 1280px) {
     main {
@@ -165,6 +156,42 @@ main {
         left: 2rem;
     }
 
+    .footer > p {
+        flex: 100%;
+        text-align: center;
+        color: black;
+        font-size: .75rem;
+    }
+
+}
+
+@media screen and (max-width: 384px) {
+    .w25 {
+        flex: 100%;
+    }
+
+    main {
+        height: 255rem;
+    }
+
+    #body { height: calc(135rem * 2)}
+
+    .bg-modal-navegate {
+        top: 20rem;
+    }
+
+    .bg-modal{
+        width: 100%;
+    }
+
+    .box-modal {
+        width: 97%;
+        left: 2rem;
+    }
+
+    footer > p {
+        padding: 4rem 0;
+    }
 
 }
 

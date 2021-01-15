@@ -64,8 +64,7 @@ header .a-search:hover {
     overflow-y: auto;
 }
 .grid__container .w25 .img > p > b {font-size: 1.1rem}
-.color-red {color: #d02a2a
-}
+.color-red {color: #d02a2a}
 
 .pagination {
     display: flex;
@@ -89,7 +88,6 @@ header .a-search:hover {
 .pagination > span > a:hover{background-color: rgba(0,0,0,.3); }
 .pagination > span > a.active  {color: black; background-color: #d02a2a;}
 
-.pagination__link {}
 .color-red {color: red}
 
 

@@ -94,6 +94,10 @@
     .content-marvel-details__container > .img-description {
         flex-direction: column;
     }
+
+    .img-description > p {
+        padding: 1rem;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -105,13 +109,14 @@
 
     #container{
         margin-left: .8rem;
-        
     }
 
 }
 
-@media screen and (max-width: 500px) {
-
+@media screen and (max-width: 384px) {
+    #container{
+        margin-left: 0;
+    }
 }
 
 
