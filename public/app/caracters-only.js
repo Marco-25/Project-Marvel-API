@@ -6,7 +6,7 @@ let hash = CreateTsPublicKeyPrivateKey(timeStamp + PRIVATE_KEY + PUBLIC_KEY).toS
 
 
 function  getCompleteSearch(name = null) {
-    fetch(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${name}&ts=${timeStamp}&apikey=${PUBLIC_KEY}&hash=${hash}`)
+    fetch(`https://gateway.marvel.com:443/v1/public/characters?name=${name}&ts=${timeStamp}&apikey=${PUBLIC_KEY}&hash=${hash}`)
         .then(response =>  response.ok ? response.json() : Promise.reject(response.statusText))
         .then(json => json.data.results)
         .then(results =>
@@ -34,7 +34,7 @@ function searchOnlyComplete() {
 
 function renderImgDescription (name, description, image) {
         let box = document.getElementById('content-marvel-details-1')
-        box.innerHTML = `<h3>${name}</h3><!--h3-->
+        box.innerHTML += `<h3>${name}</h3><!--h3-->
         <div class="content-marvel-details__container">
             <div class="img-description">
                 <img src="${image}" alt="...">

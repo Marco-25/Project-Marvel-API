@@ -67,8 +67,6 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 28rem;
 }
 
 .row-comics-series-stories-events > ul > li{
