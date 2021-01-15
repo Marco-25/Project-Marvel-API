@@ -19,9 +19,9 @@
 section#container {
     margin-top: 3rem;
 }
-
 main {
     position: relative;
+    top: 4rem;
     height: 1400px;
 }
 
@@ -48,7 +48,7 @@ main {
 
 
 footer > p {
-    margin-top: 3rem;
+    margin-top: 5rem;
     text-align: center;
     color: black;
     font-size: 1rem;
@@ -89,6 +89,7 @@ footer > p {
         flex: 33%;
     }
     main {
+        top: 3.5rem;
         height: 115rem;
     }
 
@@ -96,6 +97,9 @@ footer > p {
 
     .footer {
         margin-top: 0;
+    }
+    .bg-modal{
+        margin-top: 8rem;
     }
 
     .bg-modal-navegate {
@@ -111,29 +115,26 @@ footer > p {
     }
 
     main {
+        top: 1rem;
         height: 132rem;
     }
 
-    #body { height: calc(71rem * 2)}
+    #body { height: calc(72rem * 2)}
 
     .footer {
         margin-top: 0;
     }
 
 }
-@media screen and (max-width: 640px) {
-    .w25 {
-        flex: 100%;
-    }
-    main { height: 245rem;}
-    #body { height: calc(130rem * 2)}
-}
-@media screen and (max-width: 587px) {
+
+
+@media screen and (max-width: 597px) {
     .w25 {
         flex: 100%;
     }
 
     main {
+        top: 1rem;
         height: 250rem;
     }
 
@@ -148,6 +149,7 @@ footer > p {
     }
 
     .bg-modal{
+        margin-top: 8rem;
         width: 100%;
     }
 
@@ -167,8 +169,16 @@ footer > p {
 
 @media screen and (max-width: 468px) {
     main {
+        top: 1rem;
         height: 255rem;
     }
+
+    #img-search {
+        width: 330px!important;
+        height: 151px!important;
+    }
+
+    .bg-modal {width: 97%!important;}
 }
 
 @media screen and (max-width: 384px) {

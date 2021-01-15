@@ -57,7 +57,6 @@ function getInput () {
     btn.addEventListener('submit', (e) => {
         e.preventDefault();
         let nameSearch = document.getElementById('#searchCaracter').value;
-        console.log(nameSearch)
         getOnlyCaracter(nameSearch);
     })
 }

@@ -1,13 +1,12 @@
-
 .bg-modal{
     display: none;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 4rem;
     width: 100%;
     height: 100%;
     z-index: 99;
-    background-color: rgba(0,0,0,.6);
+    /*background-color: rgba(0,0,0,.6);*/
 }
 
 .box-modal {
@@ -46,7 +45,6 @@
 }
 
 #img-search {
-
     width: 444px;
     height: 251px;
 }
