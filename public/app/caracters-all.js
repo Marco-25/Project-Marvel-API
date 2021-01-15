@@ -13,8 +13,7 @@ function getlistCaracteres (limit = 12,page = 0){
     fetch(`http://gateway.marvel.com/v1/public/characters?ts=${timeStamp}&apikey=${PUBLIC_KEY}&hash=${hash}&limit=${limit}&offset=${page}`)
         .then(response =>  response.ok ? response.json() : Promise.reject(response.statusText))
         .then(json => json.data.results)
-        .then(results =>  { results.map(item => { render(item.name, item.thumbnail.path+'.'+item.thumbnail.extension, box,item.description) })
-         })
+        .then(results =>  { results.map(item => { render(item.name, item.thumbnail.path+'.'+item.thumbnail.extension, box,item.description) }) })
         .catch(console.log);
 }
 
@@ -44,7 +43,7 @@ function paginationCaracters() {
 
 
 function  getOnlyCaracter(name) {
-    fetch(`https://gateway.marvel.com:443/v1/public/characters?name=${name}&ts=${timeStamp}&apikey=${PUBLIC_KEY}&hash=${hash}`)
+    fetch(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${name}&ts=${timeStamp}&apikey=${PUBLIC_KEY}&hash=${hash}`)
         .then(response =>  response.ok ? response.json() : Promise.reject(response.statusText))
         .then(json => json.data.results)
         .then(results =>  results.map(item => modalrender(item.name ,item.description, item.thumbnail.path+'.'+item.thumbnail.extension) ) )

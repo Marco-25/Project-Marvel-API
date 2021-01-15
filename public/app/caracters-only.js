@@ -6,10 +6,9 @@ let hash = CreateTsPublicKeyPrivateKey(timeStamp + PRIVATE_KEY + PUBLIC_KEY).toS
 
 
 function  getCompleteSearch(name = null) {
-    fetch(`https://gateway.marvel.com:443/v1/public/characters?name=${name}&ts=${timeStamp}&apikey=${PUBLIC_KEY}&hash=${hash}`)
+    fetch(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${name}&ts=${timeStamp}&apikey=${PUBLIC_KEY}&hash=${hash}`)
         .then(response =>  response.ok ? response.json() : Promise.reject(response.statusText))
         .then(json => json.data.results)
-        // .then(res => console.log(res))
         .then(results =>
             results.map(result => {renderImgDescription( result.name, result.description,result.thumbnail.path+'.'+result.thumbnail.extension);
             result['comics'].items.map(item => renderComics(item.name));
@@ -24,8 +23,10 @@ function  getCompleteSearch(name = null) {
 searchOnlyComplete();
 function searchOnlyComplete() {
     let form = document.getElementById('form-search-complete');
+    let contentMarvelDetails = document.getElementById('content-marvel-details');
     form.addEventListener('submit', (e)=>{
         e.preventDefault();
+        contentMarvelDetails.style.display = 'block';
        let inputSearchComplete = document.getElementById('input-search-complete').value;
         getCompleteSearch(inputSearchComplete);
     });

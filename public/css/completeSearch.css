@@ -1,4 +1,7 @@
 #logo-marvel {text-align: center}
+#content-marvel-details {
+    display: none;
+}
 #marvel-reference-complete-search {
     color: White;
     margin-top: 5rem;

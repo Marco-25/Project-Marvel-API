@@ -5,7 +5,7 @@
 }
 
 #body { background: url("./../imagens/marvelBackground.gif") center / cover no-repeat; height: auto}
-.body { background: url("./../imagens/marvelBackground.gif") center / cover no-repeat; height: auto;padding-bottom: 18rem}
+.body { background: url("./../imagens/marvelBackground.gif") center / cover no-repeat; height: auto;padding-bottom: 30rem}
 #container {width: 80%}
 
 .logo-marvel {
