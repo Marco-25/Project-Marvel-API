@@ -128,7 +128,7 @@ footer > p {
     main { height: 245rem;}
     #body { height: calc(130rem * 2)}
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 587px) {
     .w25 {
         flex: 100%;
     }
@@ -163,6 +163,12 @@ footer > p {
         font-size: .75rem;
     }
 
+}
+
+@media screen and (max-width: 468px) {
+    main {
+        height: 255rem;
+    }
 }
 
 @media screen and (max-width: 384px) {
